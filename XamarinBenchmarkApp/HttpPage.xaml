@@ -1,5 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinBenchmarkApp.HttpPage">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinBenchmarkApp.HttpPage" Title="Http Benchmark">
 	<ContentPage.Content>
-	</ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Button Clicked="GetComments" Text="GET Comments" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            <Button Clicked="PostComments" Text="POST Comments" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            <Button Clicked="PutComments" Text="PUT Comments" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            <Button Clicked="DeleteComments" Text="DELETE Comments" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

@@ -8,7 +8,7 @@ namespace XamarinBenchmarkApp
         {
             InitializeComponent();
 
-            MainPage = new XamarinBenchmarkAppPage();
+            MainPage = new NavigationPage(new XamarinBenchmarkAppPage());
         }
 
         protected override void OnStart()

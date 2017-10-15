@@ -1,5 +1,19 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinBenchmarkApp.ListViewPage">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinBenchmarkApp.ListViewPage" Title="List View Benchmark">
 	<ContentPage.Content>
-	</ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Button Text="Create 1,000 rows" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="Run" />
+            <Button Text="Create 10,000 rows" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="RunLots" />
+            <Button Text="Append 1,000 rows" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="AddItems" />
+            <Button Text="Update every 10th row" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="Update" />
+            <Button Text="Clear" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="Clear" />
+            <ListView x:Name="ListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding label}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
