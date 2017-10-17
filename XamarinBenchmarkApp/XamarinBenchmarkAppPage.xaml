@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XamarinBenchmarkApp" x:Class="XamarinBenchmarkApp.XamarinBenchmarkAppPage" Title="Xamarin Benchmark">
-	<StackLayout Orientation="Vertical">
-        
-        <Button Text="List Benchmark"
-            HorizontalOptions="Center"
-            VerticalOptions="CenterAndExpand" Clicked="openListBenchmark"/>
-
-        <Button Text="HTTP Benchmark"
-            HorizontalOptions="Center"
-            VerticalOptions="CenterAndExpand" Clicked="openHttpBenchmark"/>
-
-        <Button Text="Storage Benchmark"
-            HorizontalOptions="Center"
-            VerticalOptions="CenterAndExpand" Clicked="openStorageBenchmark"/>
-
-        <Button Text="View Stack Benchmark"
-            HorizontalOptions="Center"
-            VerticalOptions="CenterAndExpand" Clicked="openViewStackBenchmark"/>
-
-        <Button Text="Chart Benchmark"
-            HorizontalOptions="Center"
-            VerticalOptions="CenterAndExpand" Clicked="openChartBenchmark"/>
-        
-  </StackLayout>
+    <StackLayout Orientation="Vertical">
+        <Button Text="List Benchmark" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OpenListBenchmark" />
+        <Button Text="HTTP Benchmark" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OpenHttpBenchmark" />
+        <Button Text="Storage Benchmark" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OpenStorageBenchmark" />
+        <Button Text="View Stack Benchmark" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OpenViewStackBenchmark" />
+        <Button Text="Chart Benchmark" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OpenChartBenchmark" />
+    </StackLayout>
 </ContentPage>
