@@ -9,14 +9,15 @@ namespace XamarinBenchmarkApp
     public partial class ChartPage : ContentPage
     {
 
-
         public ChartPage()
         {
             InitializeComponent();
 
             Content = new PlotView
             {
-                Model = new PlotModel { Title = "Hello, Forms!" },
+                Model = new PlotModel { 
+                    Title = "Hello, Forms!"                    
+                },
                 VerticalOptions = LayoutOptions.Fill,
                 HorizontalOptions = LayoutOptions.Fill,
             };
