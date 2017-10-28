@@ -43,19 +43,19 @@ namespace XamarinBenchmarkApp
             return items;
         }
 
-        void Run(object sender, System.EventArgs e)
+        void Run(object sender, EventArgs e)
         {
             listItems = BuildData();
             ListView.ItemsSource = listItems;
         }
 
-        void RunLots(object sender, System.EventArgs e)
+        void RunLots(object sender, EventArgs e)
         {
             listItems = BuildData(10000);
             ListView.ItemsSource = listItems;
         }
 
-        void AddItems(object sender, System.EventArgs e)
+        void AddItems(object sender, EventArgs e)
         {
             ObservableCollection<ListData> moreItems = BuildData();
 
@@ -65,7 +65,7 @@ namespace XamarinBenchmarkApp
             }
         }
 
-        void Update(object sender, System.EventArgs e)
+        void Update(object sender, EventArgs e)
         {
             for (int i = 0; i < listItems.Count; i += 10)
             {
@@ -73,7 +73,7 @@ namespace XamarinBenchmarkApp
             }
         }
 
-        void Clear(object sender, System.EventArgs e)
+        void Clear(object sender, EventArgs e)
         {
             listItems.Clear();
         }
