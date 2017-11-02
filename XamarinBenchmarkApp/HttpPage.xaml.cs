@@ -10,6 +10,7 @@ namespace XamarinBenchmarkApp
 
     public class Comment
     {
+        public int id { get; set; }
         public string name { get; set; }
         public string email { get; set; }
         public string body { get; set; }
@@ -59,7 +60,12 @@ namespace XamarinBenchmarkApp
             for (int i = 1; i < 101; i++)
             {
                 HttpResponseMessage response = null;
-                var json = JsonConvert.SerializeObject(new Comment());
+                var comment = new Comment();
+                comment.id = i;
+                comment.name = "Lorem Ipsum";
+                comment.email = "test@mail.com";
+                comment.body = "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium";
+                var json = JsonConvert.SerializeObject(comment);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 response = await client.PostAsync(endpoint + "/comments/", content);
 
@@ -81,7 +87,12 @@ namespace XamarinBenchmarkApp
             for (int i = 1; i < 101; i++)
             {
                 HttpResponseMessage response = null;
-                var json = JsonConvert.SerializeObject(new Comment());
+                var comment = new Comment();
+                comment.id = i;
+                comment.name = "Lorem Ipsum";
+                comment.email = "test@mail.com";
+                comment.body = "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium";
+                var json = JsonConvert.SerializeObject(comment);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 response = await client.PutAsync(endpoint + "/comments/" + i, content);
 
