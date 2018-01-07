@@ -28,12 +28,6 @@ namespace XamarinBenchmarkApp
             await Navigation.PushAsync(newPage);
         }
 
-        async void OpenViewStackBenchmark(object sender, EventArgs args)
-        {
-            var newPage = new ViewStackPage();
-            await Navigation.PushAsync(newPage);
-        }
-
         async void OpenChartBenchmark(object sender, EventArgs args)
         {
             var newPage = new ChartPage();

@@ -4,7 +4,6 @@
         <Button Text="List Benchmark" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OpenListBenchmark" />
         <Button Text="HTTP Benchmark" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OpenHttpBenchmark" />
         <Button Text="Storage Benchmark" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OpenStorageBenchmark" />
-        <Button Text="View Stack Benchmark" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OpenViewStackBenchmark" />
         <Button Text="Chart Benchmark" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OpenChartBenchmark" />
     </StackLayout>
 </ContentPage>
